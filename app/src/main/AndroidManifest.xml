@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.integration.performancedemo">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".imagecache.ImageCacheActivity"></activity>
+        <activity android:name=".imagecache.LruCacheActivity" />
+        <activity android:name=".energy_saving.AlarmIdleActivity" />
+        <activity android:name=".energy_saving.PowerSavingActivity" />
+        <activity android:name=".energy_saving.BatteryInfoActivity" />
+        <activity android:name=".threadpool.SchedulePoolActivity" />
+        <activity android:name=".threadpool.ThreadPoolActivity" />
+        <activity android:name=".memory.ReferWeakActivity" />
+        <activity android:name=".memory.ReferStrongActivity" />
+        <activity android:name=".memory.LogoutServiceActivity" />
+        <activity android:name=".memory.RemoveTaskActivity" />
+        <activity android:name=".layout_optimize.WindowStyleActivity" />
+        <activity android:name=".layout_optimize.ScreenSuitableActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

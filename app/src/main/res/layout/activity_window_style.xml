@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ff00"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".layout_optimize.WindowStyleActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+
+    <TextView
+        android:id="@+id/tv_background"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="窗口背景样式 "
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <Spinner
+        android:id="@+id/sp_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tv_background"
+        android:gravity="left|center"
+        android:spinnerMode="dialog" />
+</RelativeLayout>
+
+</LinearLayout>
+
